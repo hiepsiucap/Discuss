@@ -1,8 +1,6 @@
 /** @format */
 
-"use client ";
-
-import Link from "next/link";
+"use client";
 import {
   NavbarItem,
   Button,
@@ -11,7 +9,7 @@ import {
   PopoverContent,
   Avatar,
 } from "@nextui-org/react";
-import { auth } from "../../auth";
+import SearchInput from "./search-input";
 import * as actions from "../actions";
 import { useSession } from "next-auth/react";
 export default function HeaderAuth() {
@@ -41,6 +39,9 @@ export default function HeaderAuth() {
               Đăng kí
             </Button>
           </form>
+        </NavbarItem>
+        <NavbarItem>
+          <SearchInput></SearchInput>
         </NavbarItem>
         <NavbarItem>
           <form action={actions.signIn}>

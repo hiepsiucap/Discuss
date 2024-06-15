@@ -8,6 +8,8 @@ import {
   NavbarItem,
   Input,
 } from "@nextui-org/react";
+import HeaderAuth from "./header-auth";
+import SearchInput from "./search-input";
 export default async function Header() {
   return (
     <Navbar className="shadow mb-6">
@@ -18,10 +20,10 @@ export default async function Header() {
       </NavbarBrand>
       <NavbarContent justify="center">
         <NavbarItem>
-          <Input></Input>
+          <SearchInput></SearchInput>
         </NavbarItem>
       </NavbarContent>
-      {/* <NavbarContent justify="end">{authContent}</NavbarContent> */}
+      <HeaderAuth></HeaderAuth>
     </Navbar>
   );
 }

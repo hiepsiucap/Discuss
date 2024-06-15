@@ -1,4 +1,4 @@
-const paths ={
+export const paths ={
  homePath() {
      return "/";
  },
@@ -12,7 +12,7 @@ const paths ={
       return `/topics/${topicSlug}/posts`;
  },
  postShowPath(topicSlug: string, postId: string) {
-    return `/topics/${topicSlug}/posts`
+    return `/topics/${topicSlug}/posts/${postId}`
  }
  
 }
